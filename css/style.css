@@ -1,0 +1,278 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* For all */
+a {
+  color: white;
+  text-decoration: none;
+}
+.header_banner {
+  background-color: #2d25a0;
+  width: 100%;
+  overflow: auto;
+}
+.button {
+  background-color: palevioletred;
+  padding: 10px 24px;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: lightgreen;
+}
+
+/* 1st part */
+
+.banner_part {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 49px 123px 75px 156px;
+}
+.banner_part img:hover {
+  transform: scale(0.8) rotate(25deg);
+}
+.banner_text {
+  margin-right: 90px;
+  max-width: 460px;
+}
+.banner_text h1 {
+  font-size: 54px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 18px;
+}
+.viwe_icon_size {
+  margin-left: 8px;
+}
+.banner_part img {
+  max-width: 556px;
+  min-height: 438px;
+}
+
+/* Player Information */
+main {
+  width: 100%;
+}
+.footballers {
+  max-width: 1050px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 27px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.footballer {
+  max-width: 300px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.footballer img {
+  max-width: 300px;
+  min-height: 256px;
+}
+.footballer h1 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.footballer p {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+/* Match highlight */
+
+.highlight {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1050px;
+  margin-top: 165px;
+}
+.highlight_text {
+  max-width: 469px;
+  margin-right: 76px;
+}
+
+.highlight_text h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+.highlight_text p {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+.highlight img {
+  max-width: 567px;
+  max-height: 427px;
+}
+
+/*partners*/
+.partner_container {
+  margin-top: 158px;
+}
+.partner_container h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #1c6ef2;
+  letter-spacing: 8px;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.partner img {
+  width: 120px;
+  height: 100px;
+}
+.partner a {
+  color: #76766f;
+  margin-top: 30px;
+}
+.partner a:hover {
+  text-decoration: underline;
+}
+
+/*subscribe*/
+
+#subscribe {
+  border-radius: 25px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 5%;
+  padding: 2%;
+  width: 92%;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+footer img {
+  max-width: 483.87px;
+  max-height: 110px;
+  margin-bottom: 20px;
+}
+.social_icon {
+  font-size: 17px;
+  background-color: #e7e7e8;
+  padding: 8px;
+  margin-right: 14px;
+  border-radius: 50%;
+  color: #969bab;
+  margin-bottom: 20px;
+}
+footer p {
+  font-size: 18px;
+  font-weight: 400px;
+  margin-bottom: 63px;
+}
+
+/* Mobiles responsive */
+
+@media only screen and (max-width: 688px) {
+  .banner_part {
+    display: block;
+    margin: 0 15px;
+  }
+  .banner_text {
+    margin: 45px 65px 30px 15px;
+  }
+  .banner_text h1 {
+    font-size: 35px;
+  }
+  .banner_part img {
+    width: 330px;
+    max-height: 255px;
+    margin: 50px 16px 0 16px;
+  }
+
+  .footballers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px;
+  }
+
+  .highlight {
+    display: block;
+    margin-top: 60px;
+  }
+  .highlight_text {
+    margin: 0 16px;
+  }
+  .highlight_text h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+  .highlight_text p {
+    font-size: 16px;
+  }
+  .highlight img {
+    max-width: 328px;
+    max-height: 248px;
+    margin: 30px 16px 40px 16px;
+  }
+
+  .partner_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+  .partners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0px 0px 40px rgba(163, 163, 163, 0.15);
+    grid-gap: 20px 50px;
+    border-radius: 5px;
+  }
+
+  .partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .partner img {
+    margin-top: 10px;
+  }
+  .partner a {
+    font-size: 14px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+  }
+  footer {
+    margin-top: 43px;
+  }
+  footer img {
+    max-width: 160;
+    max-height: 63px;
+  }
+  .social_icons {
+    margin-left: 14px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+}
